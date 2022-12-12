@@ -12,6 +12,7 @@
     --primary-bg-color: #F5F4FA;
     --icons-primary-color: #AFB1B8;
     --second-text-color: #FFFFFF;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body{
@@ -98,7 +99,34 @@ color:var(--accent-color);
 
 .link.current{
 color: var(--accent-color);
+
+position: relative;
 }
+
+.link.current::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    /*width: 0%;*/
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+
+    /*opacity: 0;*/
+    /*transform: scaleX(0);*/
+    /*transition: opacity*//*width*//* transform 250ms var(--timing-function);*/
+}
+
+/*.link.current:hover::after { анімація активного посилання через: 
+    opacity: 1;
+    width: 100%;
+transform: scaleX(1);
+}*/
 
 .nav-list .link{
 display: block;

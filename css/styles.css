@@ -326,6 +326,33 @@ max-width: 100%;
 height: auto;
 }
 
+.label-thumb{
+    position: relative;
+}
+
+.label{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+      
+}
+
+.label-title{
+    color: var(--second-text-color);
+    font-weight: 700;
+    font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+
+    
+  margin-bottom: 0; /*позиціонуємо вниз*/
+  
+  padding: 27px;
+}
+
 /*команда*/
 
 .komand{
